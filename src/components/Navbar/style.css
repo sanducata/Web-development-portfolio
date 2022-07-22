@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Syne";
+  src: url(../../../public/Fonts/Syne-SemiBold.ttf);
+}
+
+.navbar {
+  font-family: Syne;
+  position: fixed;
+  width: calc(100% - 100px);
+  height: 60px;
+  display: flex;
+  padding: 0 50px 0 50px;
+  transition: all 0.3s ease;
+  z-index: 1001;
+  backdrop-filter: blur(55px);
+  border-bottom: 1px solid #f6f7fc;
+}
+
+.navbarHidden {
+  transform: translate3d(0, -100%, 0);
+}
+
+.logoDiv {
+  display: flex;
+  align-items: center;
+  flex: 2;
+}
+
+.logo {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buttonsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+  cursor: pointer;
+}
+
+.link {
+}
+
+.cvDiv {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: all 0.3s ease;
+}
+
+.downloadCvButton {
+  border: 1px solid black;
+  border-radius: 100px;
+  height: 30px;
+  padding: 0 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.downloadCvButton:hover {
+  background-color: #0a1128;
+  color: white;
+}

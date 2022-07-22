@@ -7,7 +7,7 @@ function CustomCursor() {
   useEffect(() => {
     document.addEventListener("mousemove", (event) => {
       const { clientX, clientY } = event;
-      console.log(event);
+
       const mouseX = clientX - cursorRef.current.clientWidth / 2;
       const mouseY = clientY - cursorRef.current.clientHeight / 2;
 
