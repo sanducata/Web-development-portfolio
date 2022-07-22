@@ -1,0 +1,49 @@
+.socialBorders {
+  position: fixed;
+  top: 80px;
+  left: 50px;
+  width: calc(100% - 100px);
+  height: calc(100vh - 130px);
+  z-index: 1001;
+}
+
+.rightDiv {
+  width: 35px;
+  height: calc(100vh - 130px);
+  border-right: 1px solid #0a1128;
+  border-bottom: 1px solid #0a1128;
+  position: fixed;
+  right: 50px;
+}
+
+.leftDiv {
+  width: calc(100% - 225px);
+  height: calc(100vh - 130px);
+  border-bottom: 1px solid #0a1128;
+  position: fixed;
+  left: 50px;
+}
+
+.socialLinksA {
+  position: absolute;
+  color: #0a1128;
+  transition: transform 0.3s ease;
+}
+
+.socialLinksA:hover {
+  transform: translateY(-4px);
+}
+
+.socialLinksA:nth-child(1) {
+  right: 50px;
+  bottom: -18px;
+}
+
+.socialLinksA:nth-child(2) {
+  right: 85px;
+  bottom: -15px;
+}
+
+.socialLinksA:nth-child(1) .icon {
+  font-size: 180%;
+}

@@ -1,32 +1,9 @@
-import { useEffect, useRef, useState } from "react";
 import "./style.css";
 
 function Navbar() {
-  const navbar = useRef(null);
-  const [lastScroll, setLastScroll] = useState(0);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      const currentScroll = window.pageYOffset;
-
-      if (
-        currentScroll > lastScroll &&
-        !navbar.current.classList.contains("navbarHidden")
-      ) {
-        navbar.current.classList.add("navbarHidden");
-      } else if (
-        currentScroll < lastScroll &&
-        navbar.current.classList.contains("navbarHidden")
-      ) {
-        navbar.current.classList.remove("navbarHidden");
-      }
-
-      setLastScroll(currentScroll);
-    });
-  }, [lastScroll]);
   return (
     <>
-      <div className="navbar" ref={navbar}>
+      <div className="navbar">
         <div className="logoDiv">
           <div className="logo">CATALIN SANDU</div>
         </div>

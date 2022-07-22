@@ -10,14 +10,9 @@
   height: 60px;
   display: flex;
   padding: 0 50px 0 50px;
-  transition: all 0.3s ease;
   z-index: 1001;
   backdrop-filter: blur(55px);
   border-bottom: 1px solid #f6f7fc;
-}
-
-.navbarHidden {
-  transform: translate3d(0, -100%, 0);
 }
 
 .logoDiv {
