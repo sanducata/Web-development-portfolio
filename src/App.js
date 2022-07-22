@@ -1,5 +1,7 @@
+import CustomCursor from "./components/CustomCursor/CustomCursor";
+
 function App() {
-  return <div>Hellooog</div>;
+  return <CustomCursor />;
 }
 
 export default App;
