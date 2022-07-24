@@ -1,3 +1,5 @@
+import ScrollDownArrow from "../ScrollDownArrow/ScrollDownArrow";
+
 import classes from "./home.module.css";
 
 function Home() {
@@ -6,7 +8,7 @@ function Home() {
       <div className={classes.profileImageDiv}>
         <img
           className={classes.profileImage}
-          src="http://localhost:3000/Images//IMG_3318.JPG"
+          src="http://localhost:3000/Images/IMG_3318.JPG"
           alt="profileImage"
         />
       </div>
@@ -19,6 +21,7 @@ function Home() {
         </p>
         <div className={classes.workButton}>Work</div>
       </div>
+      <ScrollDownArrow />
     </div>
   );
 }
