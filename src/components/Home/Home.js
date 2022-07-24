@@ -1,7 +1,26 @@
-import "./style.css";
+import classes from "./home.module.css";
 
 function Home() {
-  return <div>Home</div>;
+  return (
+    <div className={classes.homeContainer}>
+      <div className={classes.profileImageDiv}>
+        <img
+          className={classes.profileImage}
+          src="http://localhost:3000/Images//IMG_3318.JPG"
+          alt="profileImage"
+        />
+      </div>
+      <div className={classes.heroSectionDetails}>
+        <p className={classes.myNameIsP}>Hi, my name is</p>
+        <h1 className={classes.nameH1}>Catalin Sandu</h1>
+        <p className={classes.subtitleP}>
+          I'm a <span className={classes.colorSpan}>web developer</span> based
+          in Sibiu and I like to build unique user interfaces.
+        </p>
+        <div className={classes.workButton}>Work</div>
+      </div>
+    </div>
+  );
 }
 
 export default Home;

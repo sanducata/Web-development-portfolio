@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import "./style.css";
+import classes from "./customCursor.module.css";
 
 function CustomCursor() {
   const cursorRef = useRef(null);
@@ -16,8 +16,8 @@ function CustomCursor() {
   }, []);
 
   return (
-    <div className="customCursor" ref={cursorRef}>
-      <div className="line"></div>
+    <div className={classes.customCursor} ref={cursorRef}>
+      <div className={classes.customCursorInner}></div>
     </div>
   );
 }
