@@ -12,6 +12,7 @@ function Home() {
           alt="profileImage"
         />
       </div>
+      <div className={classes.profileImageDiv1}></div>
       <div className={classes.heroSectionDetails}>
         <p className={classes.myNameIsP}>Hi, my name is</p>
         <h1 className={classes.nameH1}>Catalin Sandu</h1>

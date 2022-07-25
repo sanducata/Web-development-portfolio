@@ -16,6 +16,18 @@
 .profileImageDiv {
   width: 300px;
   height: 450px;
+  border-radius: 200px;
+  position: absolute;
+  top: 0;
+  right: 250px;
+  bottom: 0;
+  margin: auto;
+  z-index: 1001;
+}
+
+.profileImageDiv1 {
+  width: 300px;
+  height: 450px;
   border: 1px solid #0a1128;
   border-radius: 200px;
   position: absolute;
@@ -23,6 +35,7 @@
   right: 250px;
   bottom: 0;
   margin: auto;
+  transform: rotate(20deg);
   z-index: 1001;
 }
 
