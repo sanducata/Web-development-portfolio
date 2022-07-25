@@ -8,7 +8,13 @@ function Navbar() {
     <>
       <div className={classes.navbar}>
         <div className={classes.logoDiv}>
-          <div className={classes.logo}>CATALIN SANDU</div>
+          <div className={classes.logo}>
+            <img
+              className={classes.logoImg}
+              src="http://localhost:3000/Images/CatalinSanduLogo.svg"
+              alt="logo"
+            />
+          </div>
         </div>
         <div className={classes.buttonsDiv}>
           {navLinks.map((link) => {

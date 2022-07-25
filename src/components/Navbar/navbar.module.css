@@ -24,6 +24,19 @@
 .logo {
   font-weight: bold;
   cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  height: 55%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logoImg:hover {
+  transform: translateY(-2px);
 }
 
 .buttonsDiv {
@@ -63,5 +76,5 @@
 
 .downloadCvButton:hover {
   background-color: #0a1128;
-  color: white;
+  color: #f6f7fc;
 }
