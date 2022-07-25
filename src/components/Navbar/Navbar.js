@@ -1,3 +1,6 @@
+import { Link } from "react-scroll";
+import { navLinks } from "../NavbarLinks";
+
 import classes from "./navbar.module.css";
 
 function Navbar() {
@@ -8,9 +11,13 @@ function Navbar() {
           <div className={classes.logo}>CATALIN SANDU</div>
         </div>
         <div className={classes.buttonsDiv}>
-          <div className={classes.link}>Home</div>
-          <div className={classes.link}>Work</div>
-          <div className={classes.link}>Contact</div>
+          {navLinks.map((link) => {
+            return (
+              <Link to={link.title} key={link.id} smooth={true} duration={800}>
+                <div className={classes.link}>{link.title}</div>
+              </Link>
+            );
+          })}
         </div>
         <div className={classes.cvDiv}>
           <div className={classes.downloadCvButton}>Download CV</div>

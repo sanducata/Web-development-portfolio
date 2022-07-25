@@ -10,7 +10,7 @@
   height: 60px;
   display: flex;
   padding: 0 50px 0 50px;
-  z-index: 1001;
+  z-index: 1005;
   backdrop-filter: blur(55px);
   border-bottom: 1px solid #f6f7fc;
 }
@@ -31,10 +31,15 @@
   align-items: center;
   justify-content: space-evenly;
   flex: 1;
-  cursor: pointer;
 }
 
 .link {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.link:hover {
+  transform: translateY(-2px);
 }
 
 .cvDiv {

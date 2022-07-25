@@ -15,11 +15,7 @@ function CustomCursor() {
     });
   }, []);
 
-  return (
-    <div className={classes.customCursor} ref={cursorRef}>
-      <div className={classes.customCursorInner}></div>
-    </div>
-  );
+  return <div className={classes.customCursor} ref={cursorRef}></div>;
 }
 
 export default CustomCursor;

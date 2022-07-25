@@ -7,7 +7,7 @@ function ScrollDownArrow() {
         <img
           className={classes.scrollDownArrowImage}
           src="http://localhost:3000/Images/scrollArrow.svg"
-          alt="profileImage"
+          alt="scrollDownArrow"
         />
       </div>
     </>

@@ -4,7 +4,7 @@ import classes from "./home.module.css";
 
 function Home() {
   return (
-    <div className={classes.homeContainer}>
+    <div className={classes.homeContainer} id="Home">
       <div className={classes.profileImageDiv}>
         <img
           className={classes.profileImage}
