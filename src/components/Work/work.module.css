@@ -1,11 +1,4 @@
-.containerWork {
+.workContainer {
   height: 100vh;
-}
-
-.projectsDiv {
-  margin: 0 auto;
-  width: 80%;
-  height: 80%;
-  border: 1px solid red;
-  cursor: pointer;
+  width: calc(100% - 150px);
 }

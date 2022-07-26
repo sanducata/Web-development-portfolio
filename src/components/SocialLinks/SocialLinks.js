@@ -5,10 +5,11 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 function SocialLinks() {
   return (
-    <div className={classes.socialBorders}>
-      <div className={classes.rightDiv}></div>
-      <div className={classes.leftDiv}></div>
-      <div>
+    <>
+      <hr className={classes.bottomLineLeft} />
+      <hr className={classes.bottomLineRight} />
+      <hr className={classes.rightLine} />
+      <div className={classes.socialDiv}>
         <a
           className={classes.socialLinksA}
           href="https://www.linkedin.com/in/catalin-sandu-15076b138/"
@@ -26,7 +27,7 @@ function SocialLinks() {
           <GitHubIcon className={classes.icon} />
         </a>
       </div>
-    </div>
+    </>
   );
 }
 

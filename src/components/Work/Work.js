@@ -1,9 +1,11 @@
+import Carousel from "../Carousel/Carousel";
+
 import classes from "./work.module.css";
 
 function Work() {
   return (
-    <div id="Work" className={classes.containerWork}>
-      <div className={classes.projectsDiv}>hello</div>
+    <div className={classes.workContainer} id="Work">
+      <Carousel />
     </div>
   );
 }

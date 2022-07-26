@@ -22,7 +22,6 @@
   right: 250px;
   bottom: 0;
   margin: auto;
-  z-index: 1001;
 }
 
 .profileImageDiv1 {
@@ -36,7 +35,6 @@
   bottom: 0;
   margin: auto;
   transform: rotate(20deg);
-  z-index: 1001;
 }
 
 .profileImage {
@@ -54,7 +52,6 @@
   left: 0;
   bottom: 0;
   margin: auto;
-  z-index: 1001;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,7 +81,7 @@
 }
 
 .workButton {
-  width: 150px;
+  width: 140px;
   height: 30px;
   font-family: Syne;
   border: 1px solid #0a1128;

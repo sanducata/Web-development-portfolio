@@ -10,9 +10,9 @@
   height: 60px;
   display: flex;
   padding: 0 50px 0 50px;
-  z-index: 1005;
+  z-index: 10;
   backdrop-filter: blur(55px);
-  border-bottom: 1px solid #f6f7fc;
+  border-bottom: 1px solid #edeff4;
 }
 
 .logoDiv {
@@ -64,7 +64,7 @@
 }
 
 .downloadCvButton {
-  border: 1px solid black;
+  border: 1px solid #0a1128;
   border-radius: 100px;
   height: 30px;
   padding: 0 18px;

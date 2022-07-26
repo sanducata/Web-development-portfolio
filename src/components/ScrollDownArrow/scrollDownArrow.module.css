@@ -4,7 +4,6 @@
   bottom: 85px;
   left: 50px;
   animation: scrollArrow 2s infinite;
-  z-index: 1001;
 }
 
 .scrollDownArrowImage {

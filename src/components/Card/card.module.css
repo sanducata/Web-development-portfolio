@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "SpaceMono";
+  src: url(../../../public/Fonts/SpaceMono-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Syne";
+  src: url(../../../public/Fonts/Syne-SemiBold.ttf);
+}
+
+.card {
+  background-color: #f6f7fc;
+  min-width: 350px;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  transition: box-shadow 0.3s ease;
+  padding: 30px;
+  font-family: Syne;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card:hover {
+  -webkit-box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+  -moz-box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+}
+
+.card h1 {
+  font-family: SpaceMono;
+  font-size: 130%;
+  margin-bottom: 20px;
+  color: #5b3ff4;
+  cursor: pointer;
+}
+
+.card p {
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  border-radius: 100px;
+  font-size: 14px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.primary {
+  border: 1px solid #5b3ff4;
+  background-color: #5b3ff4;
+  color: #f6f7fc;
+  transition: all 0.3s ease;
+}
+
+.primary:hover {
+  background-color: #0a1128;
+  border: 1px solid #0a1128;
+}
+
+.secondary {
+  border: 1px solid #0a1128;
+  transition: all 0.3s ease;
+}
+
+.secondary:hover {
+  background-color: #0a1128;
+  color: #f6f7fc;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 2px solid #edeff4;
+}
+
+.category {
+  padding: 5px 15px;
+  font-size: 12px;
+  color: #b2b3ba;
+  cursor: pointer;
+}
