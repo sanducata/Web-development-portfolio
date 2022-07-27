@@ -1,5 +1,7 @@
 import { Link } from "react-scroll";
 import { navLinks } from "../NavbarLinks";
+import Logo from "../../assets/Images/CatalinSanduLogo.svg";
+import CV from "../../assets/CV/CV.pdf";
 
 import classes from "./navbar.module.css";
 
@@ -9,11 +11,7 @@ function Navbar() {
       <div className={classes.navbar}>
         <div className={classes.logoDiv}>
           <div className={classes.logo}>
-            <img
-              className={classes.logoImg}
-              src="http://localhost:3000/Images/CatalinSanduLogo.svg"
-              alt="logo"
-            />
+            <img className={classes.logoImg} src={Logo} alt="logo" />
           </div>
         </div>
         <div className={classes.buttonsDiv}>
@@ -26,7 +24,7 @@ function Navbar() {
           })}
         </div>
         <div className={classes.cvDiv}>
-          <a href="http://localhost:3000/CV/CV.pdf" download="CV Catalin Sandu">
+          <a href={CV} download="CV Catalin Sandu">
             <div className={classes.downloadCvButton}>Download CV</div>
           </a>
         </div>

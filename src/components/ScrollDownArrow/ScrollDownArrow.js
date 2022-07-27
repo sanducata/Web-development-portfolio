@@ -1,3 +1,5 @@
+import ScrollDownArrowImg from "../../assets/Images/scrollArrow.svg";
+
 import classes from "./scrollDownArrow.module.css";
 
 function ScrollDownArrow() {
@@ -6,7 +8,7 @@ function ScrollDownArrow() {
       <div className={classes.scrollDownArrow}>
         <img
           className={classes.scrollDownArrowImage}
-          src="http://localhost:3000/Images/scrollArrow.svg"
+          src={ScrollDownArrowImg}
           alt="scrollDownArrow"
         />
       </div>

@@ -1,5 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import EnvelopeImage from "../../assets/Images/envelope.svg";
 
 import classes from "./contact.module.css";
 
@@ -38,7 +39,7 @@ function Contact() {
           Let's get in touch!
           <img
             className={classes.envelopeImg}
-            src="http://localhost:3000/Images/envelope.svg"
+            src={EnvelopeImage}
             alt="envelopeImage"
           />
         </h1>

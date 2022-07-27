@@ -1,11 +1,11 @@
 @font-face {
   font-family: "SpaceMono";
-  src: url(../../../public/Fonts/SpaceMono-Bold.ttf);
+  src: url(../../assets/Fonts/SpaceMono-Bold.ttf);
 }
 
 @font-face {
   font-family: "Syne";
-  src: url(../../../public/Fonts/Syne-SemiBold.ttf);
+  src: url(../../assets/Fonts/Syne-SemiBold.ttf);
 }
 
 .card {

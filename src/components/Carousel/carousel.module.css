@@ -47,20 +47,20 @@
 
 .swiperLeftArrow {
   left: 0;
-  background-image: url(../../../public/Images/carouselLeftArrow.svg);
+  background-image: url(../../assets/Images/carouselLeftArrow.svg);
   transition: background-image 0.3s ease;
 }
 
 .swiperLeftArrow:hover {
-  background-image: url(../../../public/Images/carouselLeftArrowHighlight.svg);
+  background-image: url(../../assets/Images/carouselLeftArrowHighlight.svg);
 }
 
 .swiperRightArrow {
   right: 0;
-  background-image: url(../../../public/Images/carouselRightArrow.svg);
+  background-image: url(../../assets/Images/carouselRightArrow.svg);
   transition: background-image 0.3s ease;
 }
 
 .swiperRightArrow:hover {
-  background-image: url(../../../public/Images/carouselRightArrowHighlight.svg);
+  background-image: url(../../assets/Images/carouselRightArrowHighlight.svg);
 }

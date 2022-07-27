@@ -1,5 +1,6 @@
 import { Link } from "react-scroll";
 import ScrollDownArrow from "../ScrollDownArrow/ScrollDownArrow";
+import ProfileImage from "../../assets/Images/IMG_3318.JPG";
 
 import classes from "./home.module.css";
 
@@ -10,7 +11,7 @@ function Home() {
         <div className={classes.profileImageDiv}>
           <img
             className={classes.profileImage}
-            src="http://localhost:3000/Images/IMG_3318.JPG"
+            src={ProfileImage}
             alt="profileImage"
           />
         </div>
