@@ -3,6 +3,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import Card from "../Card/Card";
 import { Projects } from "../Projects";
+import RightArrow from "../../assets/Images/carouselRightArrow.svg";
+import RightArrowDisabled from "../../assets/Images/carouselRightArrowDisabled.svg";
+import RightArrowHighlight from "../../assets/Images/carouselRightArrowHighlight.svg";
+import LeftArrow from "../../assets/Images/carouselLeftArrow.svg";
+import LeftArrowDisabled from "../../assets/Images/carouselLeftArrowDisabled.svg";
+import LeftArrowHighlight from "../../assets/Images/carouselLeftArrowHighlight.svg";
 
 import classes from "./carousel.module.css";
 import "swiper/css";
@@ -12,20 +18,46 @@ function Carousel() {
   const swiperLeftArrowRef = useRef(null);
   const swiperRightArrowRef = useRef(null);
   const [arrowClass, setArrowClass] = useState([]);
+  const [isHoveringLeftArrow, setIsHoveringLeftArrow] = useState(false);
+  const [isHoveringRightArrow, setIsHoveringRightArrow] = useState(false);
 
   useEffect(() => {
-    swiperRightArrowRef.current.classList.contains("swiper-button-disabled")
-      ? (swiperRightArrowRef.current.style.backgroundImage =
-          "url(../../assets/Images/carouselRightArrowDisabled.svg)")
-      : (swiperRightArrowRef.current.style.backgroundImage =
-          "url(../../assets/Images/carouselRightArrow.svg)");
+    if (
+      swiperLeftArrowRef.current.classList.contains("swiper-button-disabled")
+    ) {
+      swiperLeftArrowRef.current.style.backgroundImage = `url(${LeftArrowDisabled})`;
+    } else {
+      swiperLeftArrowRef.current.style.backgroundImage = `url(${LeftArrow})`;
+      if (isHoveringLeftArrow)
+        swiperLeftArrowRef.current.style.backgroundImage = `url(${LeftArrowHighlight})`;
+    }
 
-    swiperLeftArrowRef.current.classList.contains("swiper-button-disabled")
-      ? (swiperLeftArrowRef.current.style.backgroundImage =
-          "url(../../assets/Images/carouselLeftArrowDisabled.svg)")
-      : (swiperLeftArrowRef.current.style.backgroundImage =
-          "url(../../assets/Images/carouselLeftArrow.svg)");
-  }, [arrowClass]);
+    if (
+      swiperRightArrowRef.current.classList.contains("swiper-button-disabled")
+    ) {
+      swiperRightArrowRef.current.style.backgroundImage = `url(${RightArrowDisabled})`;
+    } else {
+      swiperRightArrowRef.current.style.backgroundImage = `url(${RightArrow})`;
+      if (isHoveringRightArrow)
+        swiperRightArrowRef.current.style.backgroundImage = `url(${RightArrowHighlight})`;
+    }
+  }, [arrowClass, isHoveringRightArrow, isHoveringLeftArrow]);
+
+  const handleMouseEnterLeftArrow = () => {
+    setIsHoveringLeftArrow(true);
+  };
+
+  const handleMouseLeaveLeftArrow = () => {
+    setIsHoveringLeftArrow(false);
+  };
+
+  const handleMouseEnterRightArrow = () => {
+    setIsHoveringRightArrow(true);
+  };
+
+  const handleMouseLeaveRightArrow = () => {
+    setIsHoveringRightArrow(false);
+  };
 
   const leftArrowClick = () => {
     setArrowClass(() => ({
@@ -76,6 +108,8 @@ function Carousel() {
           className={classes.swiperLeftArrow}
           ref={swiperLeftArrowRef}
           onClick={leftArrowClick}
+          onMouseEnter={handleMouseEnterLeftArrow}
+          onMouseLeave={handleMouseLeaveLeftArrow}
         ></div>
       </div>
       <div className={classes.rightArrowBehind}>
@@ -83,6 +117,8 @@ function Carousel() {
           className={classes.swiperRightArrow}
           ref={swiperRightArrowRef}
           onClick={rightArrowClick}
+          onMouseEnter={handleMouseEnterRightArrow}
+          onMouseLeave={handleMouseLeaveRightArrow}
         ></div>
       </div>
     </Swiper>
