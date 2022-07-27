@@ -8,6 +8,7 @@ function Card() {
         This was the final project for my bachelor's degree. I created it using
         the MERN stack and it was my first project built in React.
       </p>
+      <p className={classes.seeMoreP}>Click to see more.</p>
       <div className={classes.buttons}>
         <div className={`${classes.button} ${classes.primary}`}>Demo</div>
         <div className={`${classes.button} ${classes.secondary}`}>Github</div>

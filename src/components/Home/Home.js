@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import ScrollDownArrow from "../ScrollDownArrow/ScrollDownArrow";
 
 import classes from "./home.module.css";
@@ -20,7 +21,9 @@ function Home() {
           I'm a <span className={classes.colorSpan}>web developer</span> based
           in Sibiu and I like to build unique user interfaces.
         </p>
-        <div className={classes.workButton}>Work</div>
+        <Link to="Work" smooth={true} duration={800}>
+          <div className={classes.workButton}>Work</div>
+        </Link>
       </div>
       <ScrollDownArrow />
     </div>

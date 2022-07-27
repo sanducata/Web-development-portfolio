@@ -54,6 +54,10 @@
   transition: transform 0.3s ease;
 }
 
+.icon {
+  cursor: pointer;
+}
+
 .socialLinksA:hover {
   transform: translateY(-4px);
 }

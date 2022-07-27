@@ -3,7 +3,6 @@
   grid-auto-flow: column;
   gap: 10px;
   width: calc(100% - 120px) !important;
-  margin-left: 50px !important;
   padding: 30px 60px !important;
 }
 

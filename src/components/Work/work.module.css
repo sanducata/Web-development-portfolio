@@ -1,4 +1,31 @@
+@font-face {
+  font-family: "SpaceMono";
+  src: url(../../../public/Fonts/SpaceMono-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Syne";
+  src: url(../../../public/Fonts/Syne-SemiBold.ttf);
+}
+
 .workContainer {
-  height: 100vh;
+  height: calc(100vh - 100px);
+  padding: 50px 0 50px 50px;
   width: calc(100% - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.workTitle {
+  font-family: SpaceMono;
+  font-size: 200%;
+  text-align: center;
+}
+
+.workSubtitle {
+  font-family: Syne;
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-align: center;
 }
