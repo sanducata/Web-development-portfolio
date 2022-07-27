@@ -16,15 +16,15 @@ function Carousel() {
   useEffect(() => {
     swiperRightArrowRef.current.classList.contains("swiper-button-disabled")
       ? (swiperRightArrowRef.current.style.backgroundImage =
-          "url(http://localhost:3000/Images/carouselRightArrowDisabled.svg)")
+          "url(../../assets/Images/carouselRightArrowDisabled.svg)")
       : (swiperRightArrowRef.current.style.backgroundImage =
-          "url(http://localhost:3000/Images/carouselRightArrow.svg)");
+          "url(../../assets/Images/carouselRightArrow.svg)");
 
     swiperLeftArrowRef.current.classList.contains("swiper-button-disabled")
       ? (swiperLeftArrowRef.current.style.backgroundImage =
-          "url(http://localhost:3000/Images/carouselLeftArrowDisabled.svg)")
+          "url(../../assets/Images/carouselLeftArrowDisabled.svg)")
       : (swiperLeftArrowRef.current.style.backgroundImage =
-          "url(http://localhost:3000/Images/carouselLeftArrow.svg)");
+          "url(../../assets/Images/carouselLeftArrow.svg)");
   }, [arrowClass]);
 
   const leftArrowClick = () => {
