@@ -17,6 +17,12 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+
     emailjs
       .sendForm(
         "service_eqb5wx2",
@@ -28,20 +34,10 @@ function Contact() {
         (result) => {
           console.log(result.text);
           notifySuccess();
-          setFormData({
-            name: "",
-            email: "",
-            message: "",
-          });
         },
         (error) => {
           console.log(error.text);
           notifyError();
-          setFormData({
-            name: "",
-            email: "",
-            message: "",
-          });
         }
       );
   };
