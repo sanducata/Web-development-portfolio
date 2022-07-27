@@ -4,7 +4,6 @@ import { useRef } from "react";
 import classes from "./contact.module.css";
 
 function Contact() {
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -38,9 +37,9 @@ function Contact() {
         <h1 className={classes.formTitle}>
           Let's get in touch!
           <img
-            className={classes.paperPlaneImg}
-            src={PF + "Images/envelope.svg"}
-            alt="paperPlane"
+            className={classes.envelopeImg}
+            src="http://localhost:3000/Images/envelope.svg"
+            alt="envelopeImage"
           />
         </h1>
 
