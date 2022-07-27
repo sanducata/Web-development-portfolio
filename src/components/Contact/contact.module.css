@@ -145,3 +145,22 @@
   -moz-box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
+
+.loadingSpinner {
+  border: 3px solid #edeff4;
+  border-top: 3px solid #5b3ff4;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1.5s linear infinite;
+  margin: 4px auto 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

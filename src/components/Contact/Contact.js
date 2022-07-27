@@ -1,5 +1,5 @@
 import emailjs from "@emailjs/browser";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import EnvelopeImage from "../../assets/Images/envelope.svg";
 import { ToastContainer, toast } from "react-toastify";
 
@@ -13,9 +13,18 @@ function Contact() {
     email: "",
     message: "",
   });
+  const [isPending, setIsPending] = useState(false);
+  const [spinner, setSpinner] = useState(null);
+  const [button, setIsButton] = useState(
+    <button type="submit" value="Send">
+      Send
+    </button>
+  );
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
+
+    await setIsPending(!isPending);
 
     setFormData({
       name: "",
@@ -34,13 +43,28 @@ function Contact() {
         (result) => {
           console.log(result.text);
           notifySuccess();
+          setIsPending(false);
         },
         (error) => {
           console.log(error.text);
           notifyError();
+          setIsPending(false);
         }
       );
   };
+
+  useEffect(() => {
+    setIsButton(
+      isPending ? null : (
+        <button type="submit" value="Send">
+          Send
+        </button>
+      )
+    );
+    setSpinner(
+      isPending ? <div className={classes.loadingSpinner}></div> : null
+    );
+  }, [isPending]);
 
   const notifySuccess = () => {
     toast.success("Message sent successfully!", {
@@ -94,9 +118,8 @@ function Contact() {
           }
           value={formData.message}
         />
-        <button type="submit" value="Send">
-          Send
-        </button>
+        {button}
+        {spinner}
       </form>
       <ToastContainer
         autoClose={2000}
