@@ -126,3 +126,22 @@
   background-color: #0a1128;
   color: #f6f7fc;
 }
+
+:root {
+  --toastify-toast-width: 320px;
+  --toastify-color-success: #5b3ff4;
+  --toastify-font-family: Syne;
+  --toastify-color-light: #f6f7fc;
+}
+
+.toast {
+  font-size: 14px;
+  right: 60px;
+  top: 80px;
+}
+
+.toastBody {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}

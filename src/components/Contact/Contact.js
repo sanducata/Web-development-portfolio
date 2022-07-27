@@ -1,11 +1,18 @@
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import EnvelopeImage from "../../assets/Images/envelope.svg";
+import { ToastContainer, toast } from "react-toastify";
 
+import "react-toastify/dist/ReactToastify.css";
 import classes from "./contact.module.css";
 
 function Contact() {
   const form = useRef();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,11 +27,35 @@ function Contact() {
       .then(
         (result) => {
           console.log(result.text);
+          notifySuccess();
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
         },
         (error) => {
           console.log(error.text);
+          notifyError();
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
         }
       );
+  };
+
+  const notifySuccess = () => {
+    toast.success("Message sent successfully!", {
+      position: toast.POSITION.TOP_RIGHT,
+    });
+  };
+
+  const notifyError = () => {
+    toast.error("An error has occurred.", {
+      position: toast.POSITION.TOP_RIGHT,
+    });
   };
 
   return (
@@ -43,19 +74,40 @@ function Contact() {
             alt="envelopeImage"
           />
         </h1>
-
-        <input type="text" name="user_name" placeholder="Your name" required />
+        <input
+          type="text"
+          name="user_name"
+          placeholder="Your name"
+          required
+          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+          value={formData.name}
+        />
         <input
           type="email"
           name="user_email"
           placeholder="Your email"
           required
+          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+          value={formData.email}
         />
-        <textarea name="message" placeholder="Message" />
+        <textarea
+          name="message"
+          placeholder="Message"
+          onChange={(e) =>
+            setFormData({ ...formData, message: e.target.value })
+          }
+          value={formData.message}
+        />
         <button type="submit" value="Send">
           Send
         </button>
       </form>
+      <ToastContainer
+        autoClose={2000}
+        pauseOnFocusLoss={false}
+        className={classes.toast}
+        toastClassName={classes.toastBody}
+      />
     </div>
   );
 }
