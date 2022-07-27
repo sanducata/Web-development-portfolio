@@ -5,10 +5,8 @@ import Card from "../Card/Card";
 import { Projects } from "../Projects";
 import RightArrow from "../../assets/Images/carouselRightArrow.svg";
 import RightArrowDisabled from "../../assets/Images/carouselRightArrowDisabled.svg";
-import RightArrowHighlight from "../../assets/Images/carouselRightArrowHighlight.svg";
 import LeftArrow from "../../assets/Images/carouselLeftArrow.svg";
 import LeftArrowDisabled from "../../assets/Images/carouselLeftArrowDisabled.svg";
-import LeftArrowHighlight from "../../assets/Images/carouselLeftArrowHighlight.svg";
 
 import classes from "./carousel.module.css";
 import "swiper/css";
@@ -29,8 +27,11 @@ function Carousel() {
     } else {
       swiperLeftArrowRef.current.style.backgroundImage = `url(${LeftArrow})`;
       if (isHoveringLeftArrow)
-        swiperLeftArrowRef.current.style.backgroundImage = `url(${LeftArrowHighlight})`;
+        swiperLeftArrowRef.current.style.transform = "translateX(-3px)";
     }
+
+    if (!isHoveringLeftArrow)
+      swiperLeftArrowRef.current.style.transform = "translateX(3px)";
 
     if (
       swiperRightArrowRef.current.classList.contains("swiper-button-disabled")
@@ -39,8 +40,11 @@ function Carousel() {
     } else {
       swiperRightArrowRef.current.style.backgroundImage = `url(${RightArrow})`;
       if (isHoveringRightArrow)
-        swiperRightArrowRef.current.style.backgroundImage = `url(${RightArrowHighlight})`;
+        swiperRightArrowRef.current.style.transform = "translateX(3px)";
     }
+
+    if (!isHoveringRightArrow)
+      swiperRightArrowRef.current.style.transform = "translateX(-3px)";
   }, [arrowClass, isHoveringRightArrow, isHoveringLeftArrow]);
 
   const handleMouseEnterLeftArrow = () => {

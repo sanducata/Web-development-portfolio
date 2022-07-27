@@ -16,7 +16,7 @@
 .workWrapper {
   margin: 0 auto;
   padding-right: 50px;
-  width: calc(100% - 150px);
+  width: calc(100% - 136px);
   height: 98%;
   border-bottom: 1px solid #0a1128;
   display: flex;

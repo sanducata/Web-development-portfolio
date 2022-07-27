@@ -16,7 +16,8 @@
   display: flex;
   padding: 0 50px 0 50px;
   z-index: 10;
-  backdrop-filter: blur(55px);
+  background-color: rgba(237, 239, 244, 0.6);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid #edeff4;
 }
 
