@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import Card from "../Card/Card";
+import { Projects } from "../Projects";
 
 import classes from "./carousel.module.css";
 import "swiper/css";
@@ -54,21 +55,21 @@ function Carousel() {
       allowTouchMove={false}
       speed={800}
       spaceBetween={10}
-      slidesPerView={3}
+      slidesPerView={2}
       className={classes.carouselSwiper}
     >
-      <SwiperSlide className={classes.swiperSlide}>
-        <Card />
-      </SwiperSlide>
-      <SwiperSlide className={classes.swiperSlide}>
-        <Card />
-      </SwiperSlide>
-      <SwiperSlide className={classes.swiperSlide}>
-        <Card />
-      </SwiperSlide>
-      <SwiperSlide className={classes.swiperSlide}>
-        <Card />
-      </SwiperSlide>
+      {Projects.map((project) => {
+        return (
+          <SwiperSlide className={classes.swiperSlide} key={project.id}>
+            <Card
+              title={project.title}
+              description={project.description}
+              categories={project.categories}
+              links={project.links}
+            />
+          </SwiperSlide>
+        );
+      })}
       <div className={classes.leftArrowBehind}>
         <div
           className={classes.swiperLeftArrow}
