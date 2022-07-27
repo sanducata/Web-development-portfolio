@@ -4,6 +4,9 @@ import { navLinks } from "../NavbarLinks";
 import classes from "./navbar.module.css";
 
 function Navbar() {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  const CV = PF + "CV/CV.pdf";
+
   return (
     <>
       <div className={classes.navbar}>
@@ -26,7 +29,9 @@ function Navbar() {
           })}
         </div>
         <div className={classes.cvDiv}>
-          <div className={classes.downloadCvButton}>Download CV</div>
+          <a href={CV} download="CV Catalin Sandu">
+            <div className={classes.downloadCvButton}>Download CV</div>
+          </a>
         </div>
       </div>
     </>

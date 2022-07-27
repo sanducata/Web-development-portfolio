@@ -9,6 +9,7 @@ function SocialLinks() {
       <hr className={classes.bottomLineLeft} />
       <hr className={classes.bottomLineRight} />
       <hr className={classes.rightLine} />
+      <div className={classes.hide}></div>
       <div className={classes.socialDiv}>
         <a
           className={classes.socialLinksA}

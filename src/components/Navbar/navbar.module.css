@@ -63,6 +63,11 @@
   transition: all 0.3s ease;
 }
 
+.cvDiv a {
+  text-decoration: none;
+  color: #0a1128;
+}
+
 .downloadCvButton {
   border: 1px solid #0a1128;
   border-radius: 100px;
