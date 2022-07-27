@@ -66,6 +66,7 @@ function Carousel() {
               description={project.description}
               categories={project.categories}
               links={project.links}
+              comingSoon={project.comingSoon}
             />
           </SwiperSlide>
         );
