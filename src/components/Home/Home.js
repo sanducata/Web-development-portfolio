@@ -8,14 +8,6 @@ function Home() {
   return (
     <div className={classes.homeContainer} id="Home">
       <div className={classes.homeWrapper}>
-        <div className={classes.profileImageDiv}>
-          <img
-            className={classes.profileImage}
-            src={ProfileImage}
-            alt="profileImage"
-          />
-        </div>
-        <div className={classes.profileImageDiv1}></div>
         <div className={classes.heroSectionDetails}>
           <p className={classes.myNameIsP}>Hi, my name is</p>
           <h1 className={classes.nameH1}>Catalin Sandu</h1>
@@ -26,6 +18,14 @@ function Home() {
           <Link to="Work" smooth={true} duration={800}>
             <div className={classes.workButton}>Work</div>
           </Link>
+        </div>
+        <div className={classes.profileImageDiv}>
+          <img
+            className={classes.profileImage}
+            src={ProfileImage}
+            alt="profileImage"
+          />
+          <div className={classes.profileImageDiv1}></div>
         </div>
         <ScrollDownArrow />
       </div>
