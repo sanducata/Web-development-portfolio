@@ -166,10 +166,6 @@
 }
 
 @media screen and (min-width: 480px) {
-  .profileImageDiv {
-    margin-bottom: 10%;
-  }
-
   .nameH1 {
     font-size: 320%;
   }
@@ -198,6 +194,10 @@
 }
 
 @media screen and (max-width: 425px) {
+  .profileImageDiv {
+    margin-bottom: 10%;
+  }
+
   .nameH1 {
     font-size: 210%;
   }

@@ -1,10 +1,14 @@
 import { Link } from "react-scroll";
+import { useContext } from "react";
+import WindowWidthContext from "../../context/WindowWidthContext";
 import ScrollDownArrow from "../ScrollDownArrow/ScrollDownArrow";
 import ProfileImage from "../../assets/Images/IMG_3318.JPG";
 
 import classes from "./home.module.css";
 
 function Home() {
+  const { windowWidth } = useContext(WindowWidthContext);
+
   return (
     <div className={classes.homeContainer} id="Home">
       <div className={classes.homeWrapper}>
