@@ -1,9 +1,13 @@
+.carouselWrapper {
+  width: 100%;
+}
+
 .carouselSwiper {
   display: grid;
   grid-auto-flow: column;
   gap: 10px;
-  width: calc(100% - 140px) !important;
-  padding: 30px 70px !important;
+  width: calc(100% - 150px) !important;
+  padding: 30px 75px !important;
 }
 
 .swiperSlide {
@@ -42,13 +46,18 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  border: 1px solid #0a1128;
+  border-radius: 50%;
+  background-size: 15px auto;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .swiperLeftArrow {
-  left: 3px;
+  left: 5px;
 }
 
 .swiperRightArrow {
-  right: 3px;
+  right: 5px;
 }
