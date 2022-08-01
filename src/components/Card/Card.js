@@ -1,6 +1,11 @@
+import { useContext } from "react";
+import WindowWidthContext from "../../context/WindowWidthContext";
+
 import classes from "./card.module.css";
 
 function Card({ title, description, links, categories, comingSoon }) {
+  const { windowWidth } = useContext(WindowWidthContext);
+
   return (
     <div className={classes.card}>
       <div className={classes.cardTitleDiv}>
@@ -19,11 +24,19 @@ function Card({ title, description, links, categories, comingSoon }) {
       <div className={classes.cardDescriptionDiv}>
         {comingSoon ? (
           <>
-            <div className={classes.comingSoonDescription}></div>
-            <div className={classes.comingSoonDescription2}></div>
+            {windowWidth > 768 ? (
+              <div className={classes.comingSoonDescription}></div>
+            ) : null}
+            {windowWidth > 768 ? (
+              <div className={classes.comingSoonDescription2}></div>
+            ) : null}
           </>
         ) : (
-          <p className={classes.descriptionP}>{description}</p>
+          <>
+            {windowWidth > 768 ? (
+              <p className={classes.descriptionP}>{description}</p>
+            ) : null}
+          </>
         )}
         {comingSoon ? (
           <div className={classes.comingSoonSeeMore}></div>
