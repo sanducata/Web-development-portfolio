@@ -32,41 +32,37 @@
 
 .cardTitleDiv {
   height: 20%;
-  background-color: red;
 }
 
 .cardDescriptionDiv {
   height: calc(50% - 10px);
-  overflow-y: scroll;
-  background-color: #5b3ff4;
   padding-top: 10px;
 }
 
 .cardButtonsDiv {
-  background-color: antiquewhite;
-  height: 10%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: calc(10% + 10px);
+  padding: 10px 0;
 }
 
 .cardCategoriesDiv {
   height: 20%;
-  background-color: aquamarine;
+  border-top: 2px solid #edeff4;
+  padding-top: 10px;
 }
 
 .card h1 {
   font-family: SpaceMono;
-  font-size: 130%;
-  margin-bottom: 20px;
+  font-size: 120%;
   color: #5b3ff4;
   cursor: pointer;
 }
 
 .card p {
   cursor: pointer;
+  font-size: 14px;
 }
 
-.seeMoreP {
+.card .seeMoreP {
   font-size: 12px;
   color: #b2b3ba;
 }
@@ -117,7 +113,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border-top: 2px solid #edeff4;
 }
 
 .category {
@@ -171,8 +166,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 10px;
-  border-top: 2px solid #edeff4;
 }
 
 .comingSoonCategory {
