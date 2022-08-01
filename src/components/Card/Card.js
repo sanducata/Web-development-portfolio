@@ -9,26 +9,17 @@ function Card({ title, description, links, categories, comingSoon }) {
   return (
     <div className={classes.card}>
       <div className={classes.cardTitleDiv}>
-        {comingSoon ? (
-          <h1>
-            {title}
-            <span className={classes.comingSoonTitle}>
-              &#60;Coming soon&#62;
-            </span>
-          </h1>
-        ) : (
-          <h1>{title}</h1>
-        )}
+        {comingSoon ? <h1>{title}</h1> : <h1>{title}</h1>}
       </div>
 
       <div className={classes.cardDescriptionDiv}>
         {comingSoon ? (
           <>
             {windowWidth > 768 ? (
-              <div className={classes.comingSoonDescription}></div>
+              <p className={classes.comingSoonTitle}>&#60;Coming soon&#62;</p>
             ) : null}
             {windowWidth > 768 ? (
-              <div className={classes.comingSoonDescription2}></div>
+              <div className={classes.comingSoonDescription}></div>
             ) : null}
           </>
         ) : (

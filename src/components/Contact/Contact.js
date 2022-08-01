@@ -80,7 +80,7 @@ function Contact() {
 
   return (
     <div className={classes.contactContainer} id="Contact">
-      <div className={classes.contactLeft}>
+      <div className={classes.contactTop}>
         <h1>Contact</h1>
         <p>If you want to send me a message just fill out the form below.</p>
         <p className={classes.lastP}>I am happy to hear from you!</p>

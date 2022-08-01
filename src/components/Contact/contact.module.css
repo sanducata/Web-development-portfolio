@@ -18,17 +18,17 @@
   justify-content: center;
 }
 
-.contactLeft {
+.contactTop {
   width: 45%;
   text-align: center;
 }
 
-.contactLeft h1 {
+.contactTop h1 {
   font-family: SpaceMono;
   font-size: 200%;
 }
 
-.contactLeft p {
+.contactTop p {
   font-family: Syne;
   font-size: 18px;
 }
@@ -162,5 +162,47 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactContainer {
+    padding: 60px 0 20px 0;
+    height: calc(100vh - 80px);
+    width: 100%;
+  }
+
+  .contactTop {
+    width: 90%;
+  }
+
+  .lastP {
+    margin-bottom: 20px;
+  }
+
+  .contactContainer form {
+    padding: 30px;
+    width: calc(90% - 60px);
+  }
+
+  .formTitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .envelopeImg {
+    width: 40px;
+    margin-bottom: 15px;
+  }
+
+  .contactContainer form input {
+    font-size: 14px;
+    height: 25px;
+  }
+
+  .contactContainer form textarea {
+    width: calc(100% - 40px);
+    height: 70px;
+    font-size: 14px;
   }
 }
