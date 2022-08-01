@@ -30,6 +30,30 @@
   box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
 }
 
+.cardTitleDiv {
+  height: 20%;
+  background-color: red;
+}
+
+.cardDescriptionDiv {
+  height: calc(50% - 10px);
+  overflow-y: scroll;
+  background-color: #5b3ff4;
+  padding-top: 10px;
+}
+
+.cardButtonsDiv {
+  background-color: antiquewhite;
+  height: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cardCategoriesDiv {
+  height: 20%;
+  background-color: aquamarine;
+}
+
 .card h1 {
   font-family: SpaceMono;
   font-size: 130%;
@@ -49,7 +73,6 @@
 
 .buttons {
   display: flex;
-  margin-top: 20px;
   cursor: pointer;
 }
 
@@ -94,8 +117,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 40px;
-  padding-top: 10px;
   border-top: 2px solid #edeff4;
 }
 
@@ -131,7 +152,6 @@
   width: 150px;
   height: 15px;
   background-color: #edeff4;
-  margin-bottom: 20px;
   border-radius: 5px;
 }
 
@@ -151,8 +171,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
   padding-top: 10px;
   border-top: 2px solid #edeff4;
 }
