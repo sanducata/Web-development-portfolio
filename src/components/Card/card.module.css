@@ -58,12 +58,12 @@
   cursor: pointer;
 }
 
-.descriptionP {
+.cardDescriptionDiv .descriptionP {
   cursor: pointer;
   font-size: 14px;
 }
 
-.card .seeMoreP {
+.cardDescriptionDiv .seeMoreP {
   font-size: 12px;
   color: #b2b3ba;
 }
@@ -183,11 +183,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .descriptionP {
+  .cardDescriptionDiv .descriptionP {
     font-size: 80%;
   }
 
-  .card .seeMoreP {
+  .cardDescriptionDiv .card .seeMoreP {
     font-size: 70%;
   }
 }
