@@ -9,7 +9,9 @@
 }
 
 .workContainer {
-  height: 100vh;
+  height: calc(100vh - 90px);
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .workWrapper {

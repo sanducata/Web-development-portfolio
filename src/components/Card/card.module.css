@@ -184,10 +184,10 @@
 
 @media screen and (max-width: 768px) {
   .cardDescriptionDiv .descriptionP {
-    font-size: 80%;
+    font-size: 20%;
   }
 
   .cardDescriptionDiv .card .seeMoreP {
-    font-size: 70%;
+    font-size: 20%;
   }
 }
