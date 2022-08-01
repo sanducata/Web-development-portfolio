@@ -9,20 +9,20 @@
 }
 
 .workContainer {
-  height: calc(100vh - 90px);
+  height: calc(100vh - 60px);
   padding-top: 60px;
-  padding-bottom: 30px;
 }
 
 .workWrapper {
   margin: 0 auto;
   padding-right: 50px;
   width: calc(100% - 150px);
-  height: 98%;
+  height: calc(100% - 31px);
   border-bottom: 1px solid #0a1128;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 .workTitle {
@@ -42,7 +42,8 @@
   .workWrapper {
     padding-right: 0;
     width: 90%;
-    height: 100%;
+    height: calc(100% - 30px);
+    background-color: antiquewhite;
   }
 
   .workSubtitle {

@@ -17,7 +17,7 @@
   margin: 0 auto;
   width: calc(90% - 100px);
   padding-right: 10%;
-  height: 99%;
+  height: calc(100% - 1px);
   border-bottom: 1px solid #0a1128;
   display: flex;
   align-items: center;
