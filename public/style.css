@@ -7,3 +7,8 @@ body {
   background-color: #edeff4;
   color: #0a1128;
 }
+
+.overflowHidden {
+  overflow: hidden;
+  height: 100vh;
+}

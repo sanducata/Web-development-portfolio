@@ -3,7 +3,7 @@ import React, { createContext, useEffect, useState } from "react";
 const WindowWidthContext = createContext();
 
 function WindowWidthContextProvider(props) {
-  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const getWindowWidth = () => {
     setWindowWidth(window.innerWidth);
