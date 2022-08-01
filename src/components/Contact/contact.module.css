@@ -113,6 +113,7 @@
 .contactContainer form button {
   background-color: #f6f7fc;
   border: 1px solid #0a1128;
+  color: #0a1128;
   height: 30px;
   padding: 0 20px;
   border-radius: 100px;
@@ -177,7 +178,7 @@
   }
 
   .lastP {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .contactContainer form {
@@ -204,5 +205,13 @@
     width: calc(100% - 40px);
     height: 70px;
     font-size: 14px;
+  }
+
+  :root {
+    --toastify-toast-width: 90vh;
+  }
+
+  .toast {
+    right: 5%;
   }
 }
