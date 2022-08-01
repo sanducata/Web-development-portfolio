@@ -129,13 +129,13 @@
 }
 
 :root {
-  --toastify-toast-width: 320px;
   --toastify-color-success: #5b3ff4;
   --toastify-font-family: Syne;
   --toastify-color-light: #f6f7fc;
 }
 
 .toast {
+  width: 40vh;
   font-size: 14px;
   right: 60px;
   top: 80px;
@@ -207,11 +207,8 @@
     font-size: 14px;
   }
 
-  :root {
-    --toastify-toast-width: 90vh;
-  }
-
   .toast {
-    right: 5%;
+    width: 80vw;
+    left: calc(95% - 80vw);
   }
 }
