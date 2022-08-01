@@ -15,9 +15,16 @@ function Navbar() {
     <>
       <div className={classes.navbar}>
         <div className={classes.logoDiv}>
-          <div className={classes.logo}>
-            <img className={classes.logoImg} src={Logo} alt="logo" />
-          </div>
+          <Link
+            to="Home"
+            smooth={true}
+            duration={800}
+            className={classes.logoLink}
+          >
+            <div className={classes.logo}>
+              <img className={classes.logoImg} src={Logo} alt="logo" />
+            </div>
+          </Link>
         </div>
 
         {windowWidth > 768 ? (

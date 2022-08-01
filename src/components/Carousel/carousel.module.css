@@ -61,3 +61,18 @@
 .swiperRightArrow {
   right: 5px;
 }
+
+:global(.swiper-pagination) {
+  bottom: 0 !important;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  background-color: #5b3ff4 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .carouselSwiper {
+    width: 90% !important;
+    padding: 30px 5% !important;
+  }
+}

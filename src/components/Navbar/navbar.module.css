@@ -27,6 +27,10 @@
   flex: 2;
 }
 
+.logoLink {
+  height: 100%;
+}
+
 .logo {
   font-weight: bold;
   cursor: pointer;

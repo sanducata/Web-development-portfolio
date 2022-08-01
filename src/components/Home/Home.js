@@ -31,7 +31,7 @@ function Home() {
           />
           <div className={classes.profileImageDiv1}></div>
         </div>
-        {windowWidth >= 768 ? <ScrollDownArrow /> : null}
+        {windowWidth > 768 ? <ScrollDownArrow /> : null}
       </div>
     </div>
   );
