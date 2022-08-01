@@ -42,4 +42,11 @@
     width: 90%;
     height: 100%;
   }
+
+  .workSubtitle {
+    font-family: Syne;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }

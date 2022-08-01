@@ -23,7 +23,7 @@ function Card({ title, description, links, categories, comingSoon }) {
             <div className={classes.comingSoonDescription2}></div>
           </>
         ) : (
-          <p>{description}</p>
+          <p className={classes.descriptionP}>{description}</p>
         )}
         {comingSoon ? (
           <div className={classes.comingSoonSeeMore}></div>
