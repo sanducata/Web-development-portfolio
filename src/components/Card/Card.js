@@ -15,9 +15,7 @@ function Card({ title, description, links, categories, comingSoon }) {
       <div className={classes.cardDescriptionDiv}>
         {comingSoon ? (
           <>
-            {windowWidth > 768 ? (
-              <p className={classes.comingSoonTitle}>&#60;Coming soon&#62;</p>
-            ) : null}
+            <p className={classes.comingSoonTitle}>&#60;Coming soon&#62;</p>
             {windowWidth > 768 ? (
               <div className={classes.comingSoonDescription}></div>
             ) : null}
@@ -32,7 +30,7 @@ function Card({ title, description, links, categories, comingSoon }) {
         {comingSoon ? (
           <div className={classes.comingSoonSeeMore}></div>
         ) : (
-          <p className={classes.seeMoreP}>Click to see more.</p>
+          <p className={classes.seeMoreP}>Click for more details.</p>
         )}
       </div>
 

@@ -25,7 +25,7 @@ function Home() {
         </div>
         <div className={classes.profileImageDiv}>
           <img
-            className={classes.profileImage}
+            className={`${classes.profileImage} ${classes.skeletonImage}`}
             src={ProfileImage}
             alt="profileImage"
           />

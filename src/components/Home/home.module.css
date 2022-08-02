@@ -50,6 +50,20 @@
   object-fit: cover;
 }
 
+.skeletonImage {
+  animation: skeleton-loading 0.8s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: #dee0e6;
+  }
+
+  100% {
+    background-color: #d3d4dc;
+  }
+}
+
 .heroSectionDetails {
   width: 75%;
   height: 60vh;
