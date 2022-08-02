@@ -226,3 +226,10 @@
     margin-left: 2px;
   }
 }
+
+@media screen and (min-height: 740px) and (max-height: 950px) {
+  .profileImageDiv {
+    width: 45%;
+    margin-bottom: 20%;
+  }
+}
