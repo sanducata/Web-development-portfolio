@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "SpaceMono";
+  src: url(../../assets/Fonts/SpaceMono-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Syne";
+  src: url(../../assets/Fonts/Syne-SemiBold.ttf);
+}
+
+.error404 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error404Card {
+  width: 40%;
+  background-color: #f6f7fc;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  padding: 5% 3%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.errorImageDiv {
+  width: 40%;
+  padding-left: 10%;
+  margin-bottom: 3%;
+}
+
+.error404Card h1 {
+  font-family: SpaceMono;
+  font-size: 200%;
+  color: #5b3ff4;
+}
+
+.error404Card p {
+  font-family: Syne;
+}
+
+.goBackButton {
+  padding: 0 18px;
+  height: 30px;
+  font-family: Syne;
+  border: 1px solid #0a1128;
+  cursor: pointer;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.goBackButton:hover {
+  background-color: #0a1128;
+  color: #f6f7fc;
+}
+
+.routerLink {
+  text-decoration: none;
+  color: #0a1128;
+}

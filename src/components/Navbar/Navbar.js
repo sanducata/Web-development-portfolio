@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import { navLinks } from "../NavbarLinks";
 import WindowWidthContext from "../../context/WindowWidthContext";
 import Logo from "../../assets/Images/CatalinSanduLogo.svg";
@@ -15,7 +15,7 @@ function Navbar() {
     <>
       <div className={classes.navbar}>
         <div className={classes.logoDiv}>
-          <Link
+          <ScrollLink
             to="Home"
             smooth={true}
             duration={800}
@@ -24,7 +24,7 @@ function Navbar() {
             <div className={classes.logo}>
               <img className={classes.logoImg} src={Logo} alt="logo" />
             </div>
-          </Link>
+          </ScrollLink>
         </div>
 
         {windowWidth > 768 ? (
@@ -32,14 +32,14 @@ function Navbar() {
             <div className={classes.buttonsDiv}>
               {navLinks.map((link) => {
                 return (
-                  <Link
+                  <ScrollLink
                     to={link.title}
                     key={link.id}
                     smooth={true}
                     duration={800}
                   >
                     <div className={classes.link}>{link.title}</div>
-                  </Link>
+                  </ScrollLink>
                 );
               })}
             </div>

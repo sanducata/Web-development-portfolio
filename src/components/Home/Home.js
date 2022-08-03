@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import { useContext } from "react";
 import WindowWidthContext from "../../context/WindowWidthContext";
 import ScrollDownArrow from "../ScrollDownArrow/ScrollDownArrow";
@@ -19,9 +19,9 @@ function Home() {
             I'm a <span className={classes.colorSpan}>web developer</span> based
             in Sibiu and I like to build unique user interfaces.
           </p>
-          <Link to="Work" smooth={true} duration={800}>
+          <ScrollLink to="Work" smooth={true} duration={800}>
             <div className={classes.workButton}>Work</div>
-          </Link>
+          </ScrollLink>
         </div>
         <div className={classes.profileImageDiv}>
           <img
