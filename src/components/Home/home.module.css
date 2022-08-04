@@ -96,13 +96,17 @@
   color: #5b3ff4;
 }
 
-.workButton {
+.workScrollLink {
   width: 120px;
+  margin-top: 30px;
+}
+
+.workButton {
+  width: 100%;
   height: 30px;
   font-family: Syne;
   border: 1px solid #0a1128;
   cursor: pointer;
-  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;

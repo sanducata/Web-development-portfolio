@@ -19,7 +19,12 @@ function Home() {
             I'm a <span className={classes.colorSpan}>web developer</span> based
             in Sibiu and I like to build unique user interfaces.
           </p>
-          <ScrollLink to="Work" smooth={true} duration={800}>
+          <ScrollLink
+            to="Work"
+            smooth={true}
+            duration={800}
+            className={classes.workScrollLink}
+          >
             <div className={classes.workButton}>Work</div>
           </ScrollLink>
         </div>

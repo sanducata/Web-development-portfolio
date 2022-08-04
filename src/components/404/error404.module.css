@@ -14,6 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .error404Card {
@@ -68,4 +69,15 @@
 .routerLink {
   text-decoration: none;
   color: #0a1128;
+}
+
+@media screen and (max-width: 768px) {
+  .error404Card {
+    width: 80%;
+    padding: 10% 5%;
+  }
+
+  .errorImageDiv {
+    width: 60%;
+  }
 }

@@ -15,9 +15,7 @@ function Error404() {
           />
         </div>
         <h1>Oops!</h1>
-        <p>
-          Looks like you got lost. I recommend you get back to the main page.
-        </p>
+        <p>Looks like you got lost. Let's take you back to the main page.</p>
         <RouterLink to="/" className={classes.routerLink}>
           <div className={classes.goBackButton}>Go back</div>
         </RouterLink>

@@ -14,7 +14,8 @@ function MainPage() {
       <Navbar />
       <Home />
       <Work />
-      <Contact /> {windowWidth > 768 ? <SocialLinks /> : null}
+      <Contact />
+      {windowWidth > 768 ? <SocialLinks /> : null}
     </>
   );
 }
