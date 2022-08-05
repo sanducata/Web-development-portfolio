@@ -1,5 +1,7 @@
 import classes from "./projectPage.module.css";
 
+import Image from "../../assets/Images/socialMediaApp.png";
+
 function ProjectPage({
   openProjectPage,
   closeProjectPage,
@@ -31,11 +33,18 @@ function ProjectPage({
           <div className={classes.xLine}></div>
           <div className={classes.xLine}></div>
         </div>
-        <h1 className={classes.projectTitle}>{title}</h1>
 
-        <p>{description}</p>
-        <p>{links.github}</p>
-        <p>{categories}</p>
+        <div className={classes.detailsAndPhotoDiv}>
+          <div className={classes.side}>
+            <img src={Image} alt={Image} />
+          </div>
+          <div className={classes.side}>
+            <h1 className={classes.projectTitle}>{title}</h1>
+            <p>{description}</p>
+            <p>{links.github}</p>
+            <p>{categories}</p>
+          </div>
+        </div>
       </div>
     </div>
   );
