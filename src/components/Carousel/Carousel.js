@@ -118,6 +118,8 @@ function Carousel() {
               <Card
                 title={project.title}
                 description={project.description}
+                extendedDescription={project.extendedDescription}
+                image={project.image}
                 categories={project.categories}
                 links={project.links}
                 comingSoon={project.comingSoon}
@@ -144,7 +146,7 @@ function Carousel() {
                 onMouseEnter={handleMouseEnterRightArrow}
                 onMouseLeave={handleMouseLeaveRightArrow}
               ></div>
-            </div>{" "}
+            </div>
           </>
         ) : null}
       </Swiper>

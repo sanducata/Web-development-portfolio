@@ -4,7 +4,15 @@ import WindowWidthContext from "../../context/WindowWidthContext";
 
 import classes from "./card.module.css";
 
-function Card({ title, description, links, categories, comingSoon }) {
+function Card({
+  title,
+  description,
+  extendedDescription,
+  image,
+  links,
+  categories,
+  comingSoon,
+}) {
   const { windowWidth } = useContext(WindowWidthContext);
   const { setProjectDetails, setOpenProjectPage } =
     useContext(ProjectPageContext);
@@ -19,6 +27,8 @@ function Card({ title, description, links, categories, comingSoon }) {
           setProjectDetails({
             title: title,
             description: description,
+            extendedDescription: extendedDescription,
+            image: image,
             links: links,
             categories: categories,
           });

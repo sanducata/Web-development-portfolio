@@ -6,6 +6,8 @@ function ProjectPageContextProvider(props) {
   const [projectDetails, setProjectDetails] = useState({
     title: "",
     description: "",
+    extendedDescription: "",
+    image: "",
     links: "",
     categories: "",
   });

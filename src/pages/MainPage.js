@@ -27,6 +27,8 @@ function MainPage() {
         }}
         title={projectDetails.title}
         description={projectDetails.description}
+        extendedDescription={projectDetails.extendedDescription}
+        image={projectDetails.image}
         links={projectDetails.links}
         categories={projectDetails.categories}
       />
